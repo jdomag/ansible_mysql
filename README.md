@@ -1,8 +1,8 @@
 # ansible_mysql
-## Decription
+## Description
 Role to install mysql server on RedHat / Centos 7
 
-## Usage:
+## Usage
 1) Edit "production_inventory" file and add destination host where you will install MySQL server. Add a host to one of created groups e.g. wro_dbservers.
    Alternatively you can edit /etc/hosts and add entry for wro_db01 there e.g.:
 
