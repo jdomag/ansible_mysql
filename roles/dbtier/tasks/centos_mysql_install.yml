@@ -1,0 +1,16 @@
+- name: Installing mysql repo
+  yum:
+    name: https://dev.mysql.com/get/mysql{{mysql_ver}}-community-release-el7-1.noarch.rpm
+    state: present
+
+- name: Installing MySql server package 
+  yum:
+    name: mysql-community-server
+    state: present
+
+- name: Starting mysql server
+  service:
+    name: mysqld
+    state: started
+    enabled: yes
+

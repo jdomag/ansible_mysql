@@ -1,0 +1,6 @@
+---
+- hosts: all_dbservers
+  roles:
+    #- common
+    - name: dbtier
+      become: yes

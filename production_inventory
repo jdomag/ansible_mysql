@@ -1,0 +1,5 @@
+[wro_dbservers]
+wro_db01
+
+[all_dbservers:children]
+wro_dbservers
