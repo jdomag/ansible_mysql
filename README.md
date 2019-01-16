@@ -17,5 +17,5 @@ Role to install mysql server on RedHat / Centos 7
   ansible-playbook -i production_inventory site.yml -u your_username -k -K --limit your_new_db_host_you_added_to_production_inventory
 
 ## MySQL version
-You can define and change the mysql version by editing variable 'mysql_ver' in a file 'roles/dbtier/vars/main.yml'.
+You can define and change the mysql version by editing variable 'mysql_ver' in a file 'roles/dbtier/defaults/main.yml'.
 
