@@ -10,11 +10,11 @@ Role to install mysql server on RedHat / Centos 7
 
 2) Run playbook for all hosts:
 
-  ansible-playbook -i production_inventory site.yml -u your_username -k -K all
+  ansible-playbook -i production_inventory site.yml -u your_username -k -K 
 
   OR run it for single host:
 
-  ansible-playbook -i production_inventory site.yml -u your_username -k -K your_new_db_host_you_added_to_production_inventory
+  ansible-playbook -i production_inventory site.yml -u your_username -k -K --limit your_new_db_host_you_added_to_production_inventory
 
 ## MySQL version
 You can define and change the mysql version by editing variable 'mysql_ver' in a file 'roles/dbtier/vars/main.yml'.

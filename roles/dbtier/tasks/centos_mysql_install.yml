@@ -1,6 +1,6 @@
 - name: Installing mysql repo
   yum:
-    name: https://dev.mysql.com/get/mysql{{mysql_ver}}-community-release-el7-1.noarch.rpm
+    name: https://dev.mysql.com/get/mysql{{mysql_ver}}-community-release-el{{ansible_distribution_major_version}}-1.noarch.rpm
     state: present
 
 - name: Installing MySql server package 
